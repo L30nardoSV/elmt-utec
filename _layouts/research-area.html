@@ -19,4 +19,141 @@ layout: default
 
 </section>
 
+
+{% if page.faculty %}
+
+<section class="section" id="faculty">
+
+  <div class="section-heading">
+    <p class="section-kicker">Personas</p>
+    <h2>Profesores asociados</h2>
+  </div>
+
+  <div class="research-faculty-grid">
+
+    {% for person in page.faculty %}
+
+    <article class="research-faculty-card">
+
+      <h3>{{ person.name }}</h3>
+
+      {% if person.profile %}
+      <a href="{{ person.profile | relative_url }}">
+        Ver perfil →
+      </a>
+      {% endif %}
+
+    </article>
+
+    {% endfor %}
+
+  </div>
+
+</section>
+
+{% endif %}
+
+
+{% if page.projects %}
+
+<section class="section" id="projects">
+
+  <div class="section-heading">
+    <p class="section-kicker">Investigación activa</p>
+    <h2>Proyectos</h2>
+  </div>
+
+  <div class="project-grid">
+
+    {% for project in page.projects %}
+
+    <article class="project-card">
+
+      {% if project.status %}
+      <p class="project-status">
+        {{ project.status }}
+      </p>
+      {% endif %}
+
+      <h3>{{ project.title }}</h3>
+
+      {% if project.description %}
+      <p>
+        {{ project.description }}
+      </p>
+      {% endif %}
+
+      {% if project.technologies %}
+      <div class="project-meta">
+        {{ project.technologies | join: " · " }}
+      </div>
+      {% endif %}
+
+    </article>
+
+    {% endfor %}
+
+  </div>
+
+</section>
+
+{% endif %}
+
+
+{% if page.publications %}
+
+<section class="section" id="publications">
+
+  <div class="section-heading">
+    <p class="section-kicker">Resultados</p>
+    <h2>Publicaciones seleccionadas</h2>
+  </div>
+
+  <div class="publication-list">
+
+    {% for publication in page.publications %}
+
+    <article class="publication-item">
+
+      <p class="publication-year">
+        {{ publication.year }}
+      </p>
+
+      <div>
+
+        <h3>{{ publication.title }}</h3>
+
+        {% if publication.authors %}
+        <p class="publication-authors">
+          {{ publication.authors }}
+        </p>
+        {% endif %}
+
+        {% if publication.venue %}
+        <p class="publication-venue">
+          {{ publication.venue }}
+        </p>
+        {% endif %}
+
+        {% if publication.doi %}
+        <div class="publication-links">
+          <a href="{{ publication.doi }}">
+            DOI
+          </a>
+        </div>
+        {% endif %}
+
+      </div>
+
+    </article>
+
+    {% endfor %}
+
+  </div>
+
+</section>
+
+{% endif %}
+
+
 {{ content }}
