@@ -732,28 +732,30 @@ main > h3 {
   display: flex;
   flex-wrap: wrap;
 
-  gap: 9px;
+  gap: 14px;
 
-  margin-top: 26px;
-  margin-bottom: 24px;
+  margin-top: 28px;
+  margin-bottom: 26px;
 }
 
 
 .research-meta a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 
-  padding: 7px 10px;
+  padding: 8px 14px;
 
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  border: 1px solid #d5d5da;
+  border-radius: 18px;
 
   color: var(--muted);
-  background: var(--surface);
+  background: #ffffff;
 
   font-size: 0.79rem;
   font-weight: 600;
 
   text-decoration: none;
+  white-space: nowrap;
 
   transition:
     color 0.15s ease,
