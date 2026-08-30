@@ -2,9 +2,40 @@
 layout: default
 ---
 
+{% if page.lang == "en" %}
+
+  {% assign area_label = "Research area" %}
+  {% assign people_label = "People" %}
+  {% assign faculty_title = "Associated faculty" %}
+  {% assign profile_label = "View profile →" %}
+  {% assign active_label = "Active research" %}
+  {% assign projects_title = "Projects" %}
+  {% assign results_label = "Results" %}
+  {% assign publications_title = "Selected publications" %}
+  {% assign back_label = "← Back to research areas" %}
+  {% assign back_url = "/en/research/" %}
+
+{% else %}
+
+  {% assign area_label = "Área de investigación" %}
+  {% assign people_label = "Personas" %}
+  {% assign faculty_title = "Profesores asociados" %}
+  {% assign profile_label = "Ver perfil →" %}
+  {% assign active_label = "Investigación activa" %}
+  {% assign projects_title = "Proyectos" %}
+  {% assign results_label = "Resultados" %}
+  {% assign publications_title = "Publicaciones seleccionadas" %}
+  {% assign back_label = "← Volver a áreas de investigación" %}
+  {% assign back_url = "/research/" %}
+
+{% endif %}
+
+
 <section class="page-intro">
 
-  <p class="section-kicker">Área de investigación</p>
+  <p class="section-kicker">
+    {{ area_label }}
+  </p>
 
   <h1>{{ page.title }}</h1>
 
@@ -13,8 +44,8 @@ layout: default
   </p>
 
   <a class="back-link"
-     href="{{ '/research/' | relative_url }}">
-    ← Volver a áreas de investigación
+     href="{{ back_url | relative_url }}">
+    {{ back_label }}
   </a>
 
 </section>
@@ -25,8 +56,8 @@ layout: default
 <section class="section" id="faculty">
 
   <div class="section-heading">
-    <p class="section-kicker">Personas</p>
-    <h2>Profesores asociados</h2>
+    <p class="section-kicker">{{ people_label }}</p>
+    <h2>{{ faculty_title }}</h2>
   </div>
 
   <div class="research-faculty-grid">
@@ -39,7 +70,7 @@ layout: default
 
       {% if person.profile %}
       <a href="{{ person.profile | relative_url }}">
-        Ver perfil →
+        {{ profile_label }}
       </a>
       {% endif %}
 
@@ -59,8 +90,8 @@ layout: default
 <section class="section" id="projects">
 
   <div class="section-heading">
-    <p class="section-kicker">Investigación activa</p>
-    <h2>Proyectos</h2>
+    <p class="section-kicker">{{ active_label }}</p>
+    <h2>{{ projects_title }}</h2>
   </div>
 
   <div class="project-grid">
@@ -105,8 +136,8 @@ layout: default
 <section class="section" id="publications">
 
   <div class="section-heading">
-    <p class="section-kicker">Resultados</p>
-    <h2>Publicaciones seleccionadas</h2>
+    <p class="section-kicker">{{ results_label }}</p>
+    <h2>{{ publications_title }}</h2>
   </div>
 
   <div class="publication-list">
