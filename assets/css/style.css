@@ -666,9 +666,8 @@ main > h3 {
   gap: 22px;
 }
 
-.research-card {
-  min-height: 260px;
 
+.research-card {
   padding: 32px;
 
   border: 1px solid var(--border);
@@ -682,6 +681,7 @@ main > h3 {
     transform 0.15s ease;
 }
 
+
 .research-card:hover {
   border-color: #c9c9ce;
 
@@ -690,6 +690,7 @@ main > h3 {
 
   transform: translateY(-2px);
 }
+
 
 .research-number {
   display: block;
@@ -704,6 +705,7 @@ main > h3 {
   letter-spacing: 0.08em;
 }
 
+
 .research-card h3 {
   margin: 0 0 14px;
 
@@ -714,7 +716,8 @@ main > h3 {
   letter-spacing: -0.015em;
 }
 
-.research-card p {
+
+.research-card > p {
   margin: 0;
 
   color: var(--muted);
@@ -723,14 +726,73 @@ main > h3 {
 }
 
 
+/* Research shortcuts */
+
+.research-meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 26px;
+  margin-bottom: 24px;
+}
+
+
+.research-meta a {
+  display: inline-block;
+
+  padding: 7px 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  color: var(--muted);
+  background: var(--surface);
+
+  font-size: 0.79rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+
+.research-meta a:hover {
+  color: var(--primary);
+
+  border-color: var(--primary);
+  background: #ffffff;
+}
+
+
+/* Main link */
+
+.research-link {
+  display: inline-block;
+
+  color: var(--primary);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.research-link:hover {
+  text-decoration: underline;
+}
+
+
 @media (max-width: 750px) {
 
   .research-grid {
     grid-template-columns: 1fr;
-  }
-
-  .research-card {
-    min-height: auto;
   }
 
 }

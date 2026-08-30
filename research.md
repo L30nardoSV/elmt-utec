@@ -38,9 +38,19 @@ permalink: /research/
       </p>
 
       <div class="research-meta">
-        <span>Profesores asociados</span>
-        <span>Proyectos</span>
-        <span>Publicaciones</span>
+
+        <a href="{{ '/research/embedded-reconfigurable/' | relative_url }}#faculty">
+          Profesores asociados
+        </a>
+
+        <a href="{{ '/research/embedded-reconfigurable/' | relative_url }}#projects">
+          Proyectos
+        </a>
+
+        <a href="{{ '/research/embedded-reconfigurable/' | relative_url }}#publications">
+          Publicaciones
+        </a>
+
       </div>
 
       <a class="research-link"
@@ -63,9 +73,19 @@ permalink: /research/
       </p>
 
       <div class="research-meta">
-        <span>Profesores asociados</span>
-        <span>Proyectos</span>
-        <span>Publicaciones</span>
+
+        <a href="{{ '/research/robotics-autonomous/' | relative_url }}#faculty">
+          Profesores asociados
+        </a>
+
+        <a href="{{ '/research/robotics-autonomous/' | relative_url }}#projects">
+          Proyectos
+        </a>
+
+        <a href="{{ '/research/robotics-autonomous/' | relative_url }}#publications">
+          Publicaciones
+        </a>
+
       </div>
 
       <a class="research-link"
@@ -88,9 +108,19 @@ permalink: /research/
       </p>
 
       <div class="research-meta">
-        <span>Profesores asociados</span>
-        <span>Proyectos</span>
-        <span>Publicaciones</span>
+
+        <a href="{{ '/research/control-automation/' | relative_url }}#faculty">
+          Profesores asociados
+        </a>
+
+        <a href="{{ '/research/control-automation/' | relative_url }}#projects">
+          Proyectos
+        </a>
+
+        <a href="{{ '/research/control-automation/' | relative_url }}#publications">
+          Publicaciones
+        </a>
+
       </div>
 
       <a class="research-link"
@@ -113,9 +143,19 @@ permalink: /research/
       </p>
 
       <div class="research-meta">
-        <span>Profesores asociados</span>
-        <span>Proyectos</span>
-        <span>Publicaciones</span>
+
+        <a href="{{ '/research/hpc-heterogeneous/' | relative_url }}#faculty">
+          Profesores asociados
+        </a>
+
+        <a href="{{ '/research/hpc-heterogeneous/' | relative_url }}#projects">
+          Proyectos
+        </a>
+
+        <a href="{{ '/research/hpc-heterogeneous/' | relative_url }}#publications">
+          Publicaciones
+        </a>
+
       </div>
 
       <a class="research-link"
@@ -138,9 +178,19 @@ permalink: /research/
       </p>
 
       <div class="research-meta">
-        <span>Profesores asociados</span>
-        <span>Proyectos</span>
-        <span>Publicaciones</span>
+
+        <a href="{{ '/research/signal-image-processing/' | relative_url }}#faculty">
+          Profesores asociados
+        </a>
+
+        <a href="{{ '/research/signal-image-processing/' | relative_url }}#projects">
+          Proyectos
+        </a>
+
+        <a href="{{ '/research/signal-image-processing/' | relative_url }}#publications">
+          Publicaciones
+        </a>
+
       </div>
 
       <a class="research-link"
@@ -164,9 +214,19 @@ permalink: /research/
       </p>
 
       <div class="research-meta">
-        <span>Profesores asociados</span>
-        <span>Proyectos</span>
-        <span>Publicaciones</span>
+
+        <a href="{{ '/research/electronic-instrumentation/' | relative_url }}#faculty">
+          Profesores asociados
+        </a>
+
+        <a href="{{ '/research/electronic-instrumentation/' | relative_url }}#projects">
+          Proyectos
+        </a>
+
+        <a href="{{ '/research/electronic-instrumentation/' | relative_url }}#publications">
+          Publicaciones
+        </a>
+
       </div>
 
       <a class="research-link"
@@ -189,9 +249,19 @@ permalink: /research/
       </p>
 
       <div class="research-meta">
-        <span>Profesores asociados</span>
-        <span>Proyectos</span>
-        <span>Publicaciones</span>
+
+        <a href="{{ '/research/ai-engineering/' | relative_url }}#faculty">
+          Profesores asociados
+        </a>
+
+        <a href="{{ '/research/ai-engineering/' | relative_url }}#projects">
+          Proyectos
+        </a>
+
+        <a href="{{ '/research/ai-engineering/' | relative_url }}#publications">
+          Publicaciones
+        </a>
+
       </div>
 
       <a class="research-link"
