@@ -4,33 +4,31 @@ title: Inicio
 lang: es
 ---
 
-# Electronic Engineering + Mechatronics at UTEC
+# Ingeniería Electrónica + Mecatrónica en UTEC
 
-Welcome to the Electronic Engineering and Mechatronics academic community at UTEC.
+Bienvenidos a la comunidad académica de Ingeniería Electrónica y Mecatrónica de UTEC.
 
-Our faculty and students work across electronic systems, embedded computing,
-robotics, automation, control, high-performance computing, intelligent systems,
-and related engineering disciplines.
+Nuestros profesores y estudiantes trabajan en áreas que incluyen sistemas electrónicos,
+computación embebida, robótica, automatización, control, computación de alto rendimiento
+y tecnologías emergentes.
 
-## Electronic Engineering
+## Ingeniería Electrónica
 
-Electronic systems, embedded computing, digital systems, signal processing,
-communications and emerging computing technologies.
+Sistemas electrónicos, computación embebida, sistemas digitales, procesamiento de señales,
+comunicaciones y tecnologías emergentes de computación.
 
-## Mechatronics
+## Mecatrónica
 
-Robotics, control, automation, sensing, actuation and intelligent
-electromechanical systems.
+Robótica, control, automatización, sensado, actuación y sistemas electromecánicos inteligentes.
 
-## Research
+## Investigación
 
-Discover our research areas, projects and collaborations.
+Conoce nuestras áreas de investigación, proyectos y colaboraciones.
 
-## Laboratories
+## Laboratorios
 
-Explore the laboratories and experimental infrastructure supporting teaching
-and research.
+Explora los laboratorios y la infraestructura experimental que apoyan nuestra docencia e investigación.
 
-## Opportunities
+## Oportunidades
 
-Find thesis topics, research projects and opportunities for students.
+Encuentra temas de tesis, proyectos de investigación y oportunidades para estudiantes.

@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Opportunities
+title: Oportunidades
+lang: es
 permalink: /opportunities/
 ---
 
-# Opportunities
+# Oportunidades
 
-## Thesis Projects
+## Proyectos de tesis
 
-## Research Projects
+## Proyectos de investigación
 
-## Student Research Opportunities
+## Oportunidades de investigación para estudiantes
 
-## Internships and Calls
+## Prácticas y convocatorias

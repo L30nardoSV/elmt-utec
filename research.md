@@ -1,19 +1,20 @@
 ---
 layout: default
-title: Research
+title: Investigación
+lang: es
 permalink: /research/
 ---
 
-# Research
+# Investigación
 
-Our research spans areas across Electronic Engineering and Mechatronics.
+Nuestra investigación abarca áreas de Ingeniería Electrónica y Mecatrónica.
 
-## Research Areas
+## Áreas de investigación
 
-- Embedded and Reconfigurable Systems
-- Robotics and Autonomous Systems
-- Control and Automation
-- High-Performance and Heterogeneous Computing
-- Signal and Image Processing
-- Electronic Systems and Instrumentation
-- Artificial Intelligence for Engineering Systems
+- Sistemas embebidos y reconfigurables
+- Robótica y sistemas autónomos
+- Control y automatización
+- Computación de alto rendimiento y sistemas heterogéneos
+- Procesamiento de señales e imágenes
+- Sistemas electrónicos e instrumentación
+- Inteligencia artificial aplicada a sistemas de ingeniería

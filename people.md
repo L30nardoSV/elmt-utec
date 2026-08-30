@@ -1,20 +1,18 @@
 ---
 layout: default
-title: People
+title: Personas
+lang: es
 permalink: /people/
 ---
 
-# People
+# Personas
 
-## Department Leadership
+## Dirección del departamento
 
-## Faculty
+## Profesores
 
-### Electronic Engineering
+### Ingeniería Electrónica
 
-### Mechatronics
+### Mecatrónica
 
-## Laboratory and Technical Staff
-
-
-
+## Personal técnico y de laboratorios

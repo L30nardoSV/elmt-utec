@@ -1,10 +1,27 @@
 <footer class="site-footer">
-  <p>
-    Electronic Engineering + Mechatronics — UTEC
-  </p>
 
-  <p>
-    Department-maintained informational website.
-    For official institutional information, visit UTEC.
-  </p>
+  {% if page.lang == "en" %}
+
+    <p>
+      Electronic Engineering + Mechatronics — UTEC
+    </p>
+
+    <p>
+      Department-maintained informational website.
+      For official institutional information, visit UTEC.
+    </p>
+
+  {% else %}
+
+    <p>
+      Ingeniería Electrónica + Mecatrónica — UTEC
+    </p>
+
+    <p>
+      Sitio informativo mantenido por el departamento.
+      Para información institucional oficial, visite UTEC.
+    </p>
+
+  {% endif %}
+
 </footer>

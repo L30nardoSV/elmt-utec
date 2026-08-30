@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Laboratories
+title: Laboratorios
+lang: es
 permalink: /laboratories/
 ---
 
-# Laboratories
+# Laboratorios
 
-Information about EL+MT teaching and research laboratories will be available here.
+Aquí se presentarán los laboratorios de docencia e investigación de Ingeniería Electrónica y Mecatrónica.
