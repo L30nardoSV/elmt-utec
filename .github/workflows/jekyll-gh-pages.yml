@@ -35,6 +35,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Inspect generated site
+        run: |
+          echo "Generated files:"
+          find ./_site -maxdepth 4 -type f | sort
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
