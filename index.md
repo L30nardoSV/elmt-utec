@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: Inicio
+lang: es
 ---
 
 # Electronic Engineering + Mechatronics at UTEC

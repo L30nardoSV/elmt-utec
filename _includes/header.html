@@ -1,17 +1,42 @@
 <header class="site-header">
 
   <div class="site-title">
-    <a href="{{ '/' | relative_url }}">
-      Electronic Engineering + Mechatronics
-    </a>
+    {% if page.lang == "en" %}
+      <a href="{{ '/en/' | relative_url }}">
+        Electronic Engineering + Mechatronics
+      </a>
+    {% else %}
+      <a href="{{ '/' | relative_url }}">
+        Ingeniería Electrónica + Mecatrónica
+      </a>
+    {% endif %}
   </div>
 
+
+  {% if page.lang == "en" %}
+
   <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/people/' | relative_url }}">People</a>
-    <a href="{{ '/research/' | relative_url }}">Research</a>
-    <a href="{{ '/laboratories/' | relative_url }}">Laboratories</a>
-    <a href="{{ '/opportunities/' | relative_url }}">Opportunities</a>
+    <a href="{{ '/en/' | relative_url }}">Home</a>
+    <a href="{{ '/en/people/' | relative_url }}">People</a>
+    <a href="{{ '/en/research/' | relative_url }}">Research</a>
+    <a href="{{ '/en/laboratories/' | relative_url }}">Laboratories</a>
+    <a href="{{ '/en/opportunities/' | relative_url }}">Opportunities</a>
+
+    <a href="{{ '/' | relative_url }}">ES</a>
   </nav>
+
+  {% else %}
+
+  <nav>
+    <a href="{{ '/' | relative_url }}">Inicio</a>
+    <a href="{{ '/people/' | relative_url }}">Personas</a>
+    <a href="{{ '/research/' | relative_url }}">Investigación</a>
+    <a href="{{ '/laboratories/' | relative_url }}">Laboratorios</a>
+    <a href="{{ '/opportunities/' | relative_url }}">Oportunidades</a>
+
+    <a href="{{ '/en/' | relative_url }}">EN</a>
+  </nav>
+
+  {% endif %}
 
 </header>
