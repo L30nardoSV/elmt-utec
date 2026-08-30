@@ -5,3 +5,7 @@ url: "https://L30nardoSV.github.io"
 baseurl: "/elmt-utec"
 
 markdown: kramdown
+
+collections:
+  research:
+    output: true
