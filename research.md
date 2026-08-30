@@ -37,6 +37,17 @@ permalink: /research/
         aceleradores especializados y plataformas de cómputo heterogéneo.
       </p>
 
+      <div class="research-meta">
+        <span>Profesores asociados</span>
+        <span>Proyectos</span>
+        <span>Publicaciones</span>
+      </div>
+
+      <a class="research-link"
+         href="{{ '/research/embedded-reconfigurable/' | relative_url }}">
+        Ver área de investigación →
+      </a>
+
     </article>
 
 
@@ -50,6 +61,17 @@ permalink: /research/
         Diseño e integración de sistemas robóticos, percepción,
         navegación, autonomía e interacción con el entorno.
       </p>
+
+      <div class="research-meta">
+        <span>Profesores asociados</span>
+        <span>Proyectos</span>
+        <span>Publicaciones</span>
+      </div>
+
+      <a class="research-link"
+         href="{{ '/research/robotics-autonomous/' | relative_url }}">
+        Ver área de investigación →
+      </a>
 
     </article>
 
@@ -65,6 +87,17 @@ permalink: /research/
         ciberfísicos para aplicaciones industriales y experimentales.
       </p>
 
+      <div class="research-meta">
+        <span>Profesores asociados</span>
+        <span>Proyectos</span>
+        <span>Publicaciones</span>
+      </div>
+
+      <a class="research-link"
+         href="{{ '/research/control-automation/' | relative_url }}">
+        Ver área de investigación →
+      </a>
+
     </article>
 
 
@@ -79,6 +112,17 @@ permalink: /research/
         para acelerar aplicaciones científicas y de ingeniería.
       </p>
 
+      <div class="research-meta">
+        <span>Profesores asociados</span>
+        <span>Proyectos</span>
+        <span>Publicaciones</span>
+      </div>
+
+      <a class="research-link"
+         href="{{ '/research/hpc-heterogeneous/' | relative_url }}">
+        Ver área de investigación →
+      </a>
+
     </article>
 
 
@@ -92,6 +136,17 @@ permalink: /research/
         Métodos y sistemas para adquisición, procesamiento y análisis
         de señales, imágenes y datos provenientes de sensores.
       </p>
+
+      <div class="research-meta">
+        <span>Profesores asociados</span>
+        <span>Proyectos</span>
+        <span>Publicaciones</span>
+      </div>
+
+      <a class="research-link"
+         href="{{ '/research/signal-image-processing/' | relative_url }}">
+        Ver área de investigación →
+      </a>
 
     </article>
 
@@ -108,6 +163,17 @@ permalink: /research/
         y experimentación.
       </p>
 
+      <div class="research-meta">
+        <span>Profesores asociados</span>
+        <span>Proyectos</span>
+        <span>Publicaciones</span>
+      </div>
+
+      <a class="research-link"
+         href="{{ '/research/electronic-instrumentation/' | relative_url }}">
+        Ver área de investigación →
+      </a>
+
     </article>
 
 
@@ -121,6 +187,17 @@ permalink: /research/
         Aplicación de técnicas de aprendizaje automático e inteligencia
         artificial en sistemas electrónicos, robóticos y ciberfísicos.
       </p>
+
+      <div class="research-meta">
+        <span>Profesores asociados</span>
+        <span>Proyectos</span>
+        <span>Publicaciones</span>
+      </div>
+
+      <a class="research-link"
+         href="{{ '/research/ai-engineering/' | relative_url }}">
+        Ver área de investigación →
+      </a>
 
     </article>
 
