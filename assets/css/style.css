@@ -1,55 +1,517 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+:root {
+  --text: #171717;
+  --muted: #64646d;
+  --border: #e4e4e7;
+  --background: #ffffff;
+  --surface: #f7f7f8;
+
+  /* Paleta provisional del sitio */
+  --primary: #5a2a82;
+  --primary-dark: #3f1d5c;
+
+  /* Identidad visual de las dos disciplinas */
+  --electronics: #356ea5;
+  --electronics-soft: #f1f6fb;
+
+  --mechatronics: #a76536;
+  --mechatronics-soft: #fbf5f0;
+
+  --content-width: 1120px;
 }
 
+
+/* --------------------------------------------------
+   Base
+-------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  color: var(--text);
+  background: var(--background);
+
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+}
+
+
+/* --------------------------------------------------
+   Header
+-------------------------------------------------- */
+
 .site-header {
-  max-width: 1100px;
+  max-width: var(--content-width);
   margin: 0 auto;
-  padding: 24px;
+  padding: 28px 24px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  border-bottom: 1px solid var(--border);
 }
 
 .site-title a {
-  font-size: 1.3rem;
-  font-weight: bold;
+  color: var(--primary);
+
+  font-size: 1.12rem;
+  font-weight: 700;
+
   text-decoration: none;
 }
 
 nav {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 24px;
 }
 
 nav a {
+  color: #333;
+
+  font-size: 0.92rem;
+  font-weight: 500;
+
   text-decoration: none;
+
+  transition: color 0.15s ease;
 }
+
+nav a:hover {
+  color: var(--primary);
+}
+
+
+/* --------------------------------------------------
+   Main
+-------------------------------------------------- */
 
 main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 50px 24px;
+  max-width: var(--content-width);
   min-height: 70vh;
+
+  margin: 0 auto;
+  padding: 0 24px 90px;
 }
+
+
+/* --------------------------------------------------
+   Hero
+-------------------------------------------------- */
+
+.hero {
+  max-width: 930px;
+
+  padding: 100px 0 115px;
+}
+
+.hero-kicker,
+.section-kicker {
+  margin: 0 0 20px;
+
+  color: var(--primary);
+
+  font-size: 0.79rem;
+  font-weight: 700;
+
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 920px;
+
+  margin: 0;
+
+  font-size: clamp(2.6rem, 5.3vw, 4.6rem);
+  font-weight: 700;
+
+  line-height: 1.07;
+  letter-spacing: -0.04em;
+}
+
+.hero-lead {
+  max-width: 790px;
+
+  margin: 30px 0 0;
+
+  color: var(--muted);
+
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  margin-top: 38px;
+}
+
+
+/* --------------------------------------------------
+   Buttons
+-------------------------------------------------- */
+
+.button {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  border-radius: 7px;
+
+  font-size: 0.93rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  color: #ffffff;
+  background: var(--primary);
+}
+
+.button-primary:hover {
+  background: var(--primary-dark);
+}
+
+.button-secondary {
+  border: 1px solid var(--border);
+
+  background: #ffffff;
+}
+
+.button-secondary:hover {
+  border-color: #c8c8cc;
+}
+
+
+/* --------------------------------------------------
+   Generic sections
+-------------------------------------------------- */
+
+.section {
+  padding: 85px 0;
+  border-top: 1px solid var(--border);
+}
+
+.section-heading {
+  max-width: 760px;
+
+  margin-bottom: 42px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  font-weight: 650;
+
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+
+/* --------------------------------------------------
+   EL + MT
+-------------------------------------------------- */
+
+.discipline-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+.discipline-card {
+  min-height: 310px;
+
+  padding: 36px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.discipline-card.electronics {
+  border-top: 4px solid var(--electronics);
+  background: var(--electronics-soft);
+}
+
+.discipline-card.mechatronics {
+  border-top: 4px solid var(--mechatronics);
+  background: var(--mechatronics-soft);
+}
+
+.discipline-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  margin-bottom: 36px;
+
+  border-radius: 50%;
+
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.electronics .discipline-label {
+  color: var(--electronics);
+  border: 1px solid var(--electronics);
+}
+
+.mechatronics .discipline-label {
+  color: var(--mechatronics);
+  border: 1px solid var(--mechatronics);
+}
+
+.discipline-card h3 {
+  margin: 0 0 14px;
+
+  font-size: 1.55rem;
+  font-weight: 650;
+
+  letter-spacing: -0.02em;
+}
+
+.discipline-card p {
+  max-width: 470px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 1rem;
+}
+
+
+/* --------------------------------------------------
+   Feature cards
+-------------------------------------------------- */
+
+.feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 330px;
+
+  padding: 30px;
+
+  border: 1px solid var(--border);
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  text-decoration: none;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.feature-card:hover {
+  border-color: #c9c9ce;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.05);
+
+  transform: translateY(-2px);
+}
+
+.feature-number {
+  margin-bottom: 46px;
+
+  color: var(--primary);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.feature-card h3 {
+  margin: 0 0 14px;
+
+  font-size: 1.4rem;
+  font-weight: 650;
+
+  letter-spacing: -0.015em;
+}
+
+.feature-card p {
+  margin: 0 0 28px;
+
+  color: var(--muted);
+
+  font-size: 0.96rem;
+}
+
+.card-link {
+  margin-top: auto;
+
+  color: var(--primary);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+/* --------------------------------------------------
+   Footer
+-------------------------------------------------- */
 
 .site-footer {
-  max-width: 1000px;
+  max-width: var(--content-width);
+
   margin: 0 auto;
-  padding: 30px 24px;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
+  padding: 34px 24px 45px;
+
+  border-top: 1px solid var(--border);
+
+  color: var(--muted);
+
+  font-size: 0.86rem;
 }
 
-@media (max-width: 700px) {
+.site-footer p {
+  margin: 5px 0;
+}
+
+
+/* --------------------------------------------------
+   Generic pages
+-------------------------------------------------- */
+
+main > h1 {
+  margin-top: 75px;
+
+  font-size: 2.7rem;
+  letter-spacing: -0.035em;
+}
+
+main > h2 {
+  margin-top: 50px;
+
+  font-size: 1.65rem;
+}
+
+main > h3 {
+  margin-top: 32px;
+}
+
+
+/* --------------------------------------------------
+   Responsive
+-------------------------------------------------- */
+
+@media (max-width: 850px) {
+
   .site-header {
-    display: block;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 18px;
   }
 
   nav {
-    margin-top: 20px;
     flex-wrap: wrap;
+
+    gap: 12px 20px;
   }
+
+  .discipline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: auto;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .site-header {
+    padding: 22px 20px;
+  }
+
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    padding: 70px 0 80px;
+  }
+
+  .hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .hero-lead {
+    font-size: 1.05rem;
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+
+  .discipline-card {
+    min-height: auto;
+
+    padding: 28px;
+  }
+
+  .feature-card {
+    padding: 26px;
+  }
+
 }
