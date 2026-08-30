@@ -2,6 +2,7 @@
 layout: research-area
 title: Computación de alto rendimiento y sistemas heterogéneos
 lang: es
+order: 4
 permalink: /research/hpc-heterogeneous/
 
 description: >
