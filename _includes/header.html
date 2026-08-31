@@ -1,3 +1,9 @@
+{% if page.lang == "en" %}
+  {% assign language_switch_url = page.url | replace_first: '/en/', '/' %}
+{% else %}
+  {% assign language_switch_url = page.url | prepend: '/en' %}
+{% endif %}
+
 <header class="site-header">
 
   <div class="site-title">
@@ -22,7 +28,7 @@
     <a href="{{ '/en/laboratories/' | relative_url }}">Laboratories</a>
     <a href="{{ '/en/opportunities/' | relative_url }}">Opportunities</a>
 
-    <a href="{{ '/' | relative_url }}">ES</a>
+    <a href="{{ language_switch_url | relative_url }}">ES</a>
   </nav>
 
   {% else %}
@@ -34,7 +40,7 @@
     <a href="{{ '/laboratories/' | relative_url }}">Laboratorios</a>
     <a href="{{ '/opportunities/' | relative_url }}">Oportunidades</a>
 
-    <a href="{{ '/en/' | relative_url }}">EN</a>
+    <a href="{{ language_switch_url | relative_url }}">EN</a>
   </nav>
 
   {% endif %}
