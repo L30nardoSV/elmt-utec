@@ -15,3 +15,6 @@ collections:
 
   laboratories:
     output: true
+
+  opportunities:
+    output: true

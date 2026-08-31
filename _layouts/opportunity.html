@@ -1,0 +1,116 @@
+---
+layout: default
+---
+
+{% if page.lang == "en" %}
+
+  {% assign opportunity_label = "Opportunity" %}
+  {% assign status_label = "Status" %}
+  {% assign faculty_label = "Faculty contact" %}
+  {% assign deadline_label = "Deadline" %}
+  {% assign requirements_label = "Requirements" %}
+  {% assign more_label = "More information →" %}
+  {% assign back_label = "← Back to opportunities" %}
+  {% assign back_url = "/en/opportunities/" %}
+
+{% else %}
+
+  {% assign opportunity_label = "Oportunidad" %}
+  {% assign status_label = "Estado" %}
+  {% assign faculty_label = "Profesor responsable" %}
+  {% assign deadline_label = "Fecha límite" %}
+  {% assign requirements_label = "Requisitos" %}
+  {% assign more_label = "Más información →" %}
+  {% assign back_label = "← Volver a oportunidades" %}
+  {% assign back_url = "/opportunities/" %}
+
+{% endif %}
+
+
+<section class="page-intro">
+
+  <p class="section-kicker">
+    {{ opportunity_label }}
+    {% if page.type %} · {{ page.type }}{% endif %}
+  </p>
+
+  <h1>{{ page.title }}</h1>
+
+  {% if page.description %}
+  <p class="page-lead">
+    {{ page.description }}
+  </p>
+  {% endif %}
+
+  <a class="back-link"
+     href="{{ back_url | relative_url }}">
+    {{ back_label }}
+  </a>
+
+</section>
+
+
+{% if page.status or page.faculty or page.deadline %}
+
+<section class="section">
+
+  {% if page.status %}
+  <p>
+    <strong>{{ status_label }}:</strong>
+    {{ page.status }}
+  </p>
+  {% endif %}
+
+  {% if page.faculty %}
+  <p>
+    <strong>{{ faculty_label }}:</strong>
+    {{ page.faculty }}
+  </p>
+  {% endif %}
+
+  {% if page.deadline %}
+  <p>
+    <strong>{{ deadline_label }}:</strong>
+    {{ page.deadline }}
+  </p>
+  {% endif %}
+
+</section>
+
+{% endif %}
+
+
+{% if page.requirements %}
+
+<section class="section">
+
+  <div class="section-heading">
+    <h2>{{ requirements_label }}</h2>
+  </div>
+
+  <ul>
+    {% for requirement in page.requirements %}
+      <li>{{ requirement }}</li>
+    {% endfor %}
+  </ul>
+
+</section>
+
+{% endif %}
+
+
+{% if page.link %}
+
+<section class="section">
+
+  <a class="button button-primary"
+     href="{{ page.link }}">
+    {{ more_label }}
+  </a>
+
+</section>
+
+{% endif %}
+
+
+{{ content }}
