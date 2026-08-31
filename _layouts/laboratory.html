@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+{% if page.lang == "en" %}
+
+  {% assign lab_label = "Laboratory" %}
+  {% assign equipment_title = "Main equipment" %}
+  {% assign applications_title = "Applications" %}
+  {% assign responsible_title = "Faculty in charge" %}
+  {% assign back_label = "← Back to laboratories" %}
+  {% assign back_url = "/en/laboratories/" %}
+
+{% else %}
+
+  {% assign lab_label = "Laboratorio" %}
+  {% assign equipment_title = "Equipamiento principal" %}
+  {% assign applications_title = "Aplicaciones" %}
+  {% assign responsible_title = "Profesores responsables" %}
+  {% assign back_label = "← Volver a laboratorios" %}
+  {% assign back_url = "/laboratories/" %}
+
+{% endif %}
+
+
+<section class="page-intro">
+
+  <p class="section-kicker">
+    {{ lab_label }}
+  </p>
+
+  <h1>{{ page.title }}</h1>
+
+  {% if page.description %}
+  <p class="page-lead">
+    {{ page.description }}
+  </p>
+  {% endif %}
+
+  <a class="back-link"
+     href="{{ back_url | relative_url }}">
+    {{ back_label }}
+  </a>
+
+</section>
+
+
+{% if page.responsible %}
+
+<section class="section">
+
+  <div class="section-heading">
+    <h2>{{ responsible_title }}</h2>
+  </div>
+
+  <ul>
+    {% for person in page.responsible %}
+      <li>{{ person }}</li>
+    {% endfor %}
+  </ul>
+
+</section>
+
+{% endif %}
+
+
+{% if page.equipment %}
+
+<section class="section">
+
+  <div class="section-heading">
+    <h2>{{ equipment_title }}</h2>
+  </div>
+
+  <ul>
+    {% for item in page.equipment %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+
+</section>
+
+{% endif %}
+
+
+{% if page.applications %}
+
+<section class="section">
+
+  <div class="section-heading">
+    <h2>{{ applications_title }}</h2>
+  </div>
+
+  <ul>
+    {% for application in page.applications %}
+      <li>{{ application }}</li>
+    {% endfor %}
+  </ul>
+
+</section>
+
+{% endif %}
+
+
+{{ content }}

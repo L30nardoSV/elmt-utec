@@ -12,3 +12,6 @@ collections:
 
   people:
     output: true
+
+  laboratories:
+    output: true
