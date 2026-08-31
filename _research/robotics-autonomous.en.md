@@ -1,13 +1,13 @@
 ---
 layout: research-area
-title: Control and automation
+title: Robotics and autonomous systems
 lang: en
 order: 2
-permalink: /en/research/control-automation/
+permalink: /en/research/robotics-autonomous/
 
 description: >
-  Modeling, control, process automation, and cyber-physical systems
-  for industrial and experimental applications.
+  Design and integration of robotic systems, perception,
+  navigation, autonomy, and interaction with the environment.
 
 faculty: []
 
