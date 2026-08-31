@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<section class="page-intro">
+
+  <p class="section-kicker">
+    {% if page.lang == "en" %}
+      Faculty
+    {% else %}
+      Profesor
+    {% endif %}
+  </p>
+
+  <h1>{{ page.name }}</h1>
+
+  {% if page.role %}
+  <p class="page-lead">
+    {{ page.role }}
+  </p>
+  {% endif %}
+
+</section>
+
+
+{% if page.research_interests %}
+
+<section class="section">
+
+  <div class="section-heading">
+    <h2>
+      {% if page.lang == "en" %}
+        Research interests
+      {% else %}
+        Áreas de investigación
+      {% endif %}
+    </h2>
+  </div>
+
+  <ul>
+    {% for interest in page.research_interests %}
+      <li>{{ interest }}</li>
+    {% endfor %}
+  </ul>
+
+</section>
+
+{% endif %}
+
+
+{% if page.website or page.scholar or page.orcid %}
+
+<section class="section">
+
+  <div class="section-heading">
+    <h2>
+      {% if page.lang == "en" %}
+        Links
+      {% else %}
+        Enlaces
+      {% endif %}
+    </h2>
+  </div>
+
+  <div class="person-links">
+
+    {% if page.website %}
+      <a href="{{ page.website }}">Web personal</a>
+    {% endif %}
+
+    {% if page.scholar %}
+      <a href="{{ page.scholar }}">Google Scholar</a>
+    {% endif %}
+
+    {% if page.orcid %}
+      <a href="{{ page.orcid }}">ORCID</a>
+    {% endif %}
+
+  </div>
+
+</section>
+
+{% endif %}

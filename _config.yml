@@ -9,3 +9,6 @@ markdown: kramdown
 collections:
   research:
     output: true
+
+  people:
+    output: true
