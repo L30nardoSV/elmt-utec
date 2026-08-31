@@ -2,7 +2,7 @@
 layout: research-area
 title: Control and automation
 lang: en
-order: 3
+order: 2
 permalink: /en/research/control-automation/
 
 description: >
