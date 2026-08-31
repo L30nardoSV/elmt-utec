@@ -1,17 +1,20 @@
 ---
+# TEMPLATE — not published on the site
+
 layout: person
-name: Test faculty member
+
+name: Faculty member name
 lang: en
-order: 99
-permalink: /en/people/test-professor/
+order: 10
+permalink: /en/people/name-surname/
 
 role: Professor
 discipline: electronics
 
 research_interests:
-  - Embedded systems
-  - Heterogeneous computing
-  - Signal processing
+  - Research area 1
+  - Research area 2
+  - Research area 3
 
 website: https://example.com
 scholar: https://scholar.google.com
