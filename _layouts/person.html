@@ -20,6 +20,15 @@ layout: default
   </p>
   {% endif %}
 
+{% if page.image %}
+
+<div class="person-profile-image">
+  <img src="{{ page.image | relative_url }}"
+       alt="{{ page.name }}">
+</div>
+
+{% endif %}
+
 </section>
 
 

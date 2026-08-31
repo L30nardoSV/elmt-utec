@@ -35,6 +35,15 @@ permalink: /laboratories/
     <a class="feature-card"
        href="{{ laboratory.url | relative_url }}">
 
+{% if laboratory.image %}
+
+<div class="laboratory-card-image">
+  <img src="{{ laboratory.image | relative_url }}"
+       alt="{{ laboratory.title }}">
+</div>
+
+{% endif %}
+
       <span class="feature-number">
         {{ laboratory.order | prepend: "0" | slice: -2, 2 }}
       </span>

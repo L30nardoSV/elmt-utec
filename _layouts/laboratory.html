@@ -44,6 +44,15 @@ layout: default
 
 </section>
 
+{% if page.image %}
+
+<div class="laboratory-hero-image">
+  <img src="{{ page.image | relative_url }}"
+       alt="{{ page.title }}">
+</div>
+
+{% endif %}
+
 
 {% if page.responsible %}
 

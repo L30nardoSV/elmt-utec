@@ -11,6 +11,8 @@ permalink: /people/nombre-apellido/
 role: Profesor
 discipline: electronics
 
+image: /assets/images/people/nombre-apellido.jpg
+
 research_interests:
   - Área de investigación 1
   - Área de investigación 2

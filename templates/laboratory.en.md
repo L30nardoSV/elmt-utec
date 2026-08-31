@@ -12,6 +12,8 @@ description: >
   Brief description of the laboratory, its purpose,
   and the activities carried out in it.
 
+image: /assets/images/laboratories/laboratory-name.jpg
+
 responsible:
   - Faculty member in charge
 

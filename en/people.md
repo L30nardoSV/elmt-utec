@@ -105,9 +105,19 @@ permalink: /en/people/
     <article class="person-card"
              id="{{ person.name | slugify }}">
 
-      <div class="person-photo-placeholder">
-        Photo
-      </div>
+{% if person.image %}
+
+  <img class="person-photo"
+       src="{{ person.image | relative_url }}"
+       alt="{{ person.name }}">
+
+{% else %}
+
+  <div class="person-photo-placeholder">
+    Photo
+  </div>
+
+{% endif %}
 
       <div class="person-info">
 

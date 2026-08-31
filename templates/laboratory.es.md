@@ -12,6 +12,8 @@ description: >
   Breve descripción del laboratorio, su propósito
   y las actividades que se desarrollan en él.
 
+image: /assets/images/laboratories/nombre-laboratorio.jpg
+
 responsible:
   - Nombre del profesor responsable
 

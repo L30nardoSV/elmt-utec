@@ -11,6 +11,8 @@ permalink: /en/people/name-surname/
 role: Professor
 discipline: electronics
 
+image: /assets/images/people/name-surname.jpg
+
 research_interests:
   - Research area 1
   - Research area 2
