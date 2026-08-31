@@ -22,6 +22,20 @@ permalink: /people/
 </section>
 
 
+{% assign people_es = site.people
+  | where: "lang", "es"
+  | sort: "order" %}
+
+{% assign leadership = people_es
+  | where: "discipline", "leadership" %}
+
+{% assign electronics = people_es
+  | where: "discipline", "electronics" %}
+
+{% assign mechatronics = people_es
+  | where: "discipline", "mechatronics" %}
+
+
 <section class="section">
 
   <div class="section-heading">
@@ -31,25 +45,44 @@ permalink: /people/
 
   <div class="people-grid">
 
-    <article class="person-card">
+    {% for person in leadership %}
+
+    <article class="person-card"
+             id="{{ person.name | slugify }}">
 
       <div class="person-photo-placeholder">
         Foto
       </div>
 
       <div class="person-info">
-        <h3>Oscar Ramos</h3>
 
+        <h3>{{ person.name }}</h3>
+
+        {% if person.role %}
         <p class="person-role">
-          Director del Departamento de Ingeniería Electrónica y Mecatrónica
+          {{ person.role }}
         </p>
+        {% endif %}
 
-        <p class="person-area">
-          Ingeniería Electrónica + Mecatrónica
-        </p>
+        <div class="person-links">
+          <a href="{{ person.url | relative_url }}">
+            Ver perfil
+          </a>
+
+          {% if person.scholar %}
+            <a href="{{ person.scholar }}">Google Scholar</a>
+          {% endif %}
+
+          {% if person.orcid %}
+            <a href="{{ person.orcid }}">ORCID</a>
+          {% endif %}
+        </div>
+
       </div>
 
     </article>
+
+    {% endfor %}
 
   </div>
 
@@ -65,31 +98,56 @@ permalink: /people/
 
   <div class="people-grid">
 
-    <article class="person-card">
+    {% for person in electronics %}
+
+    <article class="person-card"
+             id="{{ person.name | slugify }}">
 
       <div class="person-photo-placeholder">
         Foto
       </div>
 
       <div class="person-info">
-        <h3>Nombre del profesor</h3>
 
+        <h3>{{ person.name }}</h3>
+
+        {% if person.role %}
         <p class="person-role">
-          Profesor
+          {{ person.role }}
         </p>
+        {% endif %}
 
+        {% if person.research_interests %}
         <p class="person-area">
-          Área de investigación
+          {{ person.research_interests | join: " · " }}
         </p>
+        {% endif %}
 
         <div class="person-links">
-          <a href="#">Perfil</a>
-          <a href="#">Google Scholar</a>
-          <a href="#">ORCID</a>
+
+          <a href="{{ person.url | relative_url }}">
+            Ver perfil
+          </a>
+
+          {% if person.website %}
+            <a href="{{ person.website }}">Web</a>
+          {% endif %}
+
+          {% if person.scholar %}
+            <a href="{{ person.scholar }}">Google Scholar</a>
+          {% endif %}
+
+          {% if person.orcid %}
+            <a href="{{ person.orcid }}">ORCID</a>
+          {% endif %}
+
         </div>
+
       </div>
 
     </article>
+
+    {% endfor %}
 
   </div>
 
@@ -105,31 +163,56 @@ permalink: /people/
 
   <div class="people-grid">
 
-    <article class="person-card">
+    {% for person in mechatronics %}
+
+    <article class="person-card"
+             id="{{ person.name | slugify }}">
 
       <div class="person-photo-placeholder">
         Foto
       </div>
 
       <div class="person-info">
-        <h3>Nombre del profesor</h3>
 
+        <h3>{{ person.name }}</h3>
+
+        {% if person.role %}
         <p class="person-role">
-          Profesor
+          {{ person.role }}
         </p>
+        {% endif %}
 
+        {% if person.research_interests %}
         <p class="person-area">
-          Área de investigación
+          {{ person.research_interests | join: " · " }}
         </p>
+        {% endif %}
 
         <div class="person-links">
-          <a href="#">Perfil</a>
-          <a href="#">Google Scholar</a>
-          <a href="#">ORCID</a>
+
+          <a href="{{ person.url | relative_url }}">
+            Ver perfil
+          </a>
+
+          {% if person.website %}
+            <a href="{{ person.website }}">Web</a>
+          {% endif %}
+
+          {% if person.scholar %}
+            <a href="{{ person.scholar }}">Google Scholar</a>
+          {% endif %}
+
+          {% if person.orcid %}
+            <a href="{{ person.orcid }}">ORCID</a>
+          {% endif %}
+
         </div>
+
       </div>
 
     </article>
+
+    {% endfor %}
 
   </div>
 
