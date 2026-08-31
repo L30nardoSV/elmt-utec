@@ -5,6 +5,55 @@ lang: en
 permalink: /en/laboratories/
 ---
 
-# Laboratories
+<section class="page-intro">
 
-Information about our Electronic Engineering and Mechatronics teaching and research laboratories will be available here.
+  <p class="section-kicker">Laboratories</p>
+
+  <h1>
+    Department laboratories
+  </h1>
+
+  <p class="page-lead">
+    Our laboratories support education, research, and experimental
+    development across Electronic Engineering and Mechatronics.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="feature-grid">
+
+    {% assign laboratories_en = site.laboratories
+      | where: "lang", "en"
+      | sort: "order" %}
+
+    {% for laboratory in laboratories_en %}
+
+    <a class="feature-card"
+       href="{{ laboratory.url | relative_url }}">
+
+      <span class="feature-number">
+        {{ laboratory.order | prepend: "0" | slice: -2, 2 }}
+      </span>
+
+      <h3>{{ laboratory.title }}</h3>
+
+      {% if laboratory.description %}
+      <p>
+        {{ laboratory.description }}
+      </p>
+      {% endif %}
+
+      <span class="card-link">
+        View laboratory →
+      </span>
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>
